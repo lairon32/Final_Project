@@ -1,0 +1,114 @@
+.header {
+    &__logo {
+        height: 40px;
+    }
+
+    height: 720px;
+
+    &__navbar {
+        display: flex;
+        justify-content: space-between;
+        color: rgba(239, 239, 239, 0.7);
+        align-items: center;
+        padding-top: 22.5px;
+    }
+
+    &__menu {
+        display: flex;
+        gap: 40px;
+    }
+
+    &__link {
+        font-size: 18px;
+        transition: .5s;
+
+        &:hover {
+            color: white;
+            transition: .5s;
+            cursor: pointer;
+        }
+    }
+
+    &__register {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        color: white;
+        transition: .5s;
+        font-size: 15px;
+    }
+
+    &__Signup {
+        border: 1px solid white;
+        border-radius: 8px;
+        padding: 10px 16px;
+        transition: .5s;
+
+        &:hover {
+            cursor: pointer;
+            transition: .5s;
+            background: #3B44F6;
+            border: 1px solid #3B44F6;
+        }
+    }
+
+    &__Login {
+        border: 1px solid white;
+        border-radius: 8px;
+        padding: 10px 16px;
+        transition: .5s;
+
+        &:hover {
+            cursor: pointer;
+            transition: .5s;
+            background: #3B44F6;
+            border: 1px solid #3B44F6;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        color: white;
+
+        &-game1 {
+            background-image: url('./image/banner header.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    &__title {
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 71px;
+    }
+
+    &__text {
+        font-size: 24px;
+        line-height: 33px;
+        font-weight: 400;
+    }
+
+    &__button {
+        font-size: 27px;
+        max-width: 205px;
+        text-align: center;
+        position: relative;
+        top: 64px;
+        padding: 16px 32px;
+        border: 1px solid #3B44F6;
+        background-color: #3B44F6;
+        transition: .5s;
+        border-radius: 8px;
+        font-weight: 400;
+        color: white;
+
+        &:hover {
+            cursor: pointer;
+            transition: .5s;
+            background: none;
+        }
+    }
+}

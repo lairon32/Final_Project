@@ -1,0 +1,84 @@
+.xbox-comments {
+    &__header {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+        padding-top: 80px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 36px;
+        color: #181818;
+    }
+
+    &__body {
+        padding: 32px;
+    }
+
+    &__text {
+        font-size: 18px;
+        max-width: 473px;
+        text-align: center;
+        color: #323232;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        gap: 45px;
+        padding-top: 51px;
+    }
+
+    // &__column-active {
+    //     width: 297px;
+    //     height: 296px;
+    //     background-color: #eeeeee;
+    //     box-shadow: 0px 8px 10px rgba(164, 164, 164, 0.07);
+    //     border-radius: 6px;
+    //     transition: .5s;
+
+    //     &:hover {
+    //         width: 338px;
+    //         height: 333px;
+    //         transition: .5s;
+    //         cursor: pointer;
+    //     }
+    // }
+
+    &__column {
+        width: 297px;
+        height: 296px;
+        background-color: #eeeeee;
+        box-shadow: 0px 8px 10px rgba(164, 164, 164, 0.07);
+        border-radius: 6px;
+        transition: .5s;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: .5s;
+            cursor: pointer;
+        }
+    }
+
+    &__name {
+        font-weight: 500;
+        font-size: 20px;
+        color: #181818;
+        padding-top: 24px;
+    }
+
+    &__balls {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    &__comment {
+        font-size: 14px;
+        text-align: center;
+    }
+}

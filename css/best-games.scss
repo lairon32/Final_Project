@@ -1,0 +1,89 @@
+.best-games {
+
+    &__title {
+        font-weight: 600;
+        font-size: 36px;
+        padding-top: 65px;
+        color: #181818;
+    }
+
+    &__column {
+        display: flex;
+        padding-top: 28px;
+        gap: 16px;
+        justify-content: center;
+        padding-top: 10px
+    }
+
+    &__row {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+
+}
+
+.item-best__games {
+    padding: 16px 16px 24px;
+    background: #FFFFFF;
+    border: 0.3px solid #D1D1D1;
+    border-radius: 8px;
+
+    &__header {
+        font-size: 20px;
+        font-weight: 500;
+        color: #181818;
+        padding-top: 15px;
+    }
+
+    &__price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 17px;
+        font-weight: 500;
+        font-size: 16px;
+        color: #3B44F6;
+    }
+
+    &__newprice {
+        background: #F5F4F9;
+        border: 0.5px solid #F0F0F0;
+        border-radius: 4px;
+        color: #7D7D7D;
+    }
+
+    &__button {
+        margin-top: 10px;
+        color: #3B44F6;
+        background: #D8DAFD;
+        border-color: #D8DAFD;
+        border-radius: 4px;
+        padding: 4px 10px;
+        max-width: 127px;
+        text-align: center;
+        transition: .5s;
+
+        &:hover {
+            cursor: pointer;
+            background: none;
+            transition: .5s;
+        }
+    }
+
+    &__discount {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4px;
+        background: rgba(252, 50, 111, 0.2);
+        border-radius: 4px;
+        color: #FC326F;
+        font-size: 12px;
+    }
+}
+
+.discount-wrapper {
+    display: flex;
+}

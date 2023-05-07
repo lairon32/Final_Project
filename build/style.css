@@ -1,0 +1,680 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.best-games__title {
+  font-weight: 600;
+  font-size: 36px;
+  padding-top: 65px;
+  color: #181818;
+}
+.best-games__column {
+  display: flex;
+  padding-top: 28px;
+  gap: 16px;
+  justify-content: center;
+  padding-top: 10px;
+}
+.best-games__row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.item-best__games {
+  padding: 16px 16px 24px;
+  background: #FFFFFF;
+  border: 0.3px solid #D1D1D1;
+  border-radius: 8px;
+}
+.item-best__games__header {
+  font-size: 20px;
+  font-weight: 500;
+  color: #181818;
+  padding-top: 15px;
+}
+.item-best__games__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 17px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #3B44F6;
+}
+.item-best__games__newprice {
+  background: #F5F4F9;
+  border: 0.5px solid #F0F0F0;
+  border-radius: 4px;
+  color: #7D7D7D;
+}
+.item-best__games__button {
+  margin-top: 10px;
+  color: #3B44F6;
+  background: #D8DAFD;
+  border-color: #D8DAFD;
+  border-radius: 4px;
+  padding: 4px 10px;
+  max-width: 127px;
+  text-align: center;
+  transition: 0.5s;
+}
+.item-best__games__button:hover {
+  cursor: pointer;
+  background: none;
+  transition: 0.5s;
+}
+.item-best__games__discount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  background: rgba(252, 50, 111, 0.2);
+  border-radius: 4px;
+  color: #FC326F;
+  font-size: 12px;
+}
+
+.discount-wrapper {
+  display: flex;
+}
+.coming-soon {
+  background: #0E0E0E;
+  margin-top: 100px;
+}
+.coming-soon__title {
+  font-weight: 600;
+  font-size: 36px;
+  color: #F5F4F9;
+  padding-top: 50px;
+}
+.coming-soon__item {
+  padding-top: 24px;
+}
+.coming-soon__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding-bottom: 82px;
+}
+.coming-soon__text {
+  font-weight: 500;
+  font-size: 28px;
+  color: #FFFFFF;
+}
+.coming-soon__button {
+  font-weight: 600;
+  font-size: 15px;
+  color: #F5F4F9;
+  text-align: center;
+  border: 1px solid #F5F4F9;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  width: 112px;
+  height: 22px;
+  padding: 9px 16px;
+  transition: 0.5s;
+}
+.coming-soon__button:hover {
+  border-color: black;
+  cursor: pointer;
+  transition: 0.5s;
+  background-color: black;
+  color: white;
+}
+.coming-soon__flex {
+  display: flex;
+  gap: 16px;
+}
+.coming-soon__item {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 82px;
+}
+.coming-soon__left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.coming-soon__right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.call-of-duty {
+  width: 633px;
+  height: 400px;
+  background-image: url("./image/Coming soon/coming-soon-1.png");
+  background-repeat: no-repeat;
+  position: relative;
+}
+.call-of-duty__body {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  position: absolute;
+  top: 210px;
+  left: 36px;
+}
+
+.ea-sports-fifa23 {
+  width: 447px;
+  height: 262px;
+  background-image: url("./image/Coming soon/coming-soon-2.png");
+  background-repeat: no-repeat;
+  position: relative;
+}
+.ea-sports-fifa23__body {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  position: absolute;
+  top: 99px;
+  left: 41px;
+}
+
+.resident-evil-4-remake {
+  width: 447px;
+  height: 262px;
+  background-image: url("./image/Coming soon/coming-soon-3.png");
+  background-repeat: no-repeat;
+  position: relative;
+}
+.resident-evil-4-remake__body {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  position: absolute;
+  top: 99px;
+  left: 41px;
+}
+
+.nba-2k22 {
+  width: 633px;
+  height: 400px;
+  background-image: url("./image/Coming soon/coming-soon-4.png");
+  background-repeat: no-repeat;
+  position: relative;
+}
+.nba-2k22__body {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  position: absolute;
+  top: 210px;
+  left: 36px;
+}
+
+.alien-dark-descent {
+  width: 477px;
+  height: 262px;
+  background-image: url("./image/Coming soon/coming-soon-5.png");
+  background-repeat: no-repeat;
+  position: relative;
+}
+.alien-dark-descent__body {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  position: absolute;
+  top: 99px;
+  left: 41px;
+}
+.footer {
+  background-color: #0E0E0E;
+  margin-top: 200px;
+  height: 369px;
+}
+.footer__logo {
+  width: 110px;
+  height: 40px;
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+.footer__menu-group {
+  display: flex;
+  gap: 244px;
+}
+
+.footer__group-item {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer__resources-item {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer__link-title {
+  font-weight: 600;
+  color: #F5F4F9;
+  font-size: 18px;
+  transition: 0.5s;
+}
+.footer__link-title:hover {
+  transition: 0.5s;
+  cursor: pointer;
+  color: #A0A0A0;
+}
+
+.footer__link-text {
+  font-size: 16px;
+  color: #A0A0A0;
+  transition: 0.5s;
+}
+.footer__link-text:hover {
+  color: #F5F4F9;
+  cursor: pointer;
+}
+
+.socials__title {
+  font-weight: 600;
+  color: #F5F4F9;
+  font-size: 18px;
+}
+
+.socials__icons {
+  display: flex;
+  padding-top: 24px;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.social__copyright {
+  color: #A0A0A0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.copyright__line {
+  margin-top: 65px;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 8px;
+}
+.games__genres {
+  margin-top: 110px;
+}
+.games__genres-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.games__genres-title {
+  font-weight: 600;
+  font-size: 36px;
+}
+.games__genres-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #3B44F6;
+}
+.games__genres-card {
+  position: relative;
+}
+.games__genres-row {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding-top: 10px;
+}
+.games__genres-img {
+  border-radius: 8px;
+}
+.games__genres-body {
+  position: absolute;
+  top: 75px;
+  left: 25%;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+.header {
+  height: 720px;
+}
+.header__logo {
+  height: 40px;
+}
+.header__navbar {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(239, 239, 239, 0.7);
+  align-items: center;
+  padding-top: 22.5px;
+}
+.header__menu {
+  display: flex;
+  gap: 40px;
+}
+.header__link {
+  font-size: 18px;
+  transition: 0.5s;
+}
+.header__link:hover {
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.header__register {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  color: white;
+  transition: 0.5s;
+  font-size: 15px;
+}
+.header__Signup {
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 10px 16px;
+  transition: 0.5s;
+}
+.header__Signup:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  background: #3B44F6;
+  border: 1px solid #3B44F6;
+}
+.header__Login {
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 10px 16px;
+  transition: 0.5s;
+}
+.header__Login:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  background: #3B44F6;
+  border: 1px solid #3B44F6;
+}
+.header__content {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  color: white;
+}
+.header__content-game1 {
+  background-image: url("./image/banner header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header__title {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 71px;
+}
+.header__text {
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 400;
+}
+.header__button {
+  font-size: 27px;
+  max-width: 205px;
+  text-align: center;
+  position: relative;
+  top: 64px;
+  padding: 16px 32px;
+  border: 1px solid #3B44F6;
+  background-color: #3B44F6;
+  transition: 0.5s;
+  border-radius: 8px;
+  font-weight: 400;
+  color: white;
+}
+.header__button:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  background: none;
+}
+.popular-games__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 84px;
+}
+.popular-games__title {
+  font-weight: 600;
+  font-size: 36px;
+}
+.popular-games__text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #3B44F6;
+}
+.popular-games__row {
+  padding-top: 24px;
+}
+.popular-games__column {
+  display: grid;
+  grid-template-columns: repeat(4, 262px);
+  justify-content: center;
+  gap: 16px;
+}
+
+.popular-games__card {
+  padding: 16px 16px 24px;
+  background: #FFFFFF;
+  border: 0.3px solid #D1D1D1;
+  border-radius: 8px;
+}
+.popular-games__card__title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #181818;
+  padding-top: 15px;
+  transition: 0.5s;
+}
+.popular-games__card__title:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  color: red;
+}
+.popular-games__card__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 17px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #3B44F6;
+}
+.popular-games__card__newprice {
+  background: #F5F4F9;
+  border: 0.5px solid #F0F0F0;
+  border-radius: 4px;
+  color: #7D7D7D;
+}
+.popular-games__card__button {
+  margin-top: 10px;
+  color: #3B44F6;
+  background: #D8DAFD;
+  border-color: #D8DAFD;
+  border-radius: 4px;
+  padding: 4px 10px;
+  max-width: 127px;
+  text-align: center;
+  transition: 0.5s;
+}
+.popular-games__card__button:hover {
+  cursor: pointer;
+  background: none;
+  transition: 0.5s;
+}
+.popular-games__card__discount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  background: rgba(252, 50, 111, 0.2);
+  border-radius: 4px;
+  color: #FC326F;
+  font-size: 12px;
+}
+
+.discount-wrapper {
+  display: flex;
+}
+
+.popular__games__card__image:hover {
+  cursor: pointer;
+  opacity: 75%;
+}
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&display=swap");
+.container {
+  padding: 0 100px;
+}
+
+body {
+  font-family: "Lexend", sans-serif;
+}
+.whyexstore__content {
+  margin-top: 70px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+.whyexstore__title {
+  font-weight: 600;
+  font-size: 36px;
+  color: #181818;
+}
+.whyexstore__text {
+  max-width: 473px;
+  color: #323232;
+  font-size: 18px;
+}
+.whyexstore__row {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 239px;
+  margin-top: 60px;
+}
+.whyexstore__row-body {
+  padding-top: 21px;
+  font-size: 20px;
+  max-width: 250px;
+  font-weight: 500;
+  color: #181818;
+}
+.xbox-comments__header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  padding-top: 80px;
+}
+.xbox-comments__title {
+  font-weight: 600;
+  font-size: 36px;
+  color: #181818;
+}
+.xbox-comments__body {
+  padding: 32px;
+}
+.xbox-comments__text {
+  font-size: 18px;
+  max-width: 473px;
+  text-align: center;
+  color: #323232;
+}
+.xbox-comments__row {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 45px;
+  padding-top: 51px;
+}
+.xbox-comments__column {
+  width: 297px;
+  height: 296px;
+  background-color: #eeeeee;
+  box-shadow: 0px 8px 10px rgba(164, 164, 164, 0.07);
+  border-radius: 6px;
+  transition: 0.5s;
+}
+.xbox-comments__column:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.xbox-comments__name {
+  font-weight: 500;
+  font-size: 20px;
+  color: #181818;
+  padding-top: 24px;
+}
+.xbox-comments__balls {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.xbox-comments__comment {
+  font-size: 14px;
+  text-align: center;
+}
