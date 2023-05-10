@@ -85,7 +85,7 @@ category.forEach((element) => {
 //     const title = document.createElement('h2')
 //     title.className = 'item-best__games__title'
 //     title.textContent = arr.name;
- 
+
 //     price.className = 'price'
 //     price.textContent = arr.price
 
@@ -110,3 +110,4 @@ category.forEach((element) => {
 //     const search = document.querySelector('.best-games__column')
 //     search.append(renderCategory(element))
 // })
+

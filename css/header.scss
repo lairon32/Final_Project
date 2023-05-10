@@ -71,12 +71,6 @@
         flex-direction: column;
         gap: 17px;
         color: white;
-
-        &-game1 {
-            background-image: url('./image/banner header.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
     }
 
     &__title {
@@ -111,4 +105,22 @@
             background: none;
         }
     }
+}
+
+.banner__image-one {
+    background-image: url('./image/banner header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner__image-two {
+    background-image: url('./image/swiper/two.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner__image-three {
+    background-image: url('./image/swiper/three.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }

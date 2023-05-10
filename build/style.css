@@ -453,11 +453,6 @@ table {
   gap: 17px;
   color: white;
 }
-.header__content-game1 {
-  background-image: url("./image/banner header.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .header__title {
   font-size: 48px;
   font-weight: 600;
@@ -486,6 +481,24 @@ table {
   cursor: pointer;
   transition: 0.5s;
   background: none;
+}
+
+.banner__image-one {
+  background-image: url("./image/banner header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner__image-two {
+  background-image: url("./image/swiper/two.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner__image-three {
+  background-image: url("./image/swiper/three.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .popular-games__header {
   display: flex;
