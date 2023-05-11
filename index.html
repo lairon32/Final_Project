@@ -14,7 +14,7 @@
 
     <!-- Header -->
 
-    <header class="header container">
+    <header class="header">
         <nav class="header__navbar">
             <img class="header__logo" src="./image/header/header logo.png" alt="">
             <ul class="header__menu">
@@ -27,6 +27,39 @@
                 <li class="header__Login">Log in</li>
             </ul>
         </nav>
+
+        <div class="form">
+            <h2 class="form__title">Вхід</h2>
+            <div class="form__input">
+                <input type="text" placeholder="Логін">
+            </div>
+            <div class="form__input">
+                <input type="password" placeholder="Пароль">
+            </div>
+            <div class="form__input">
+                <input type="submit" value="Увійти">
+            </div>
+            <a href="#" class="form__forget">Забули пароль?</a>
+        </div>
+
+        <div class="form-register" id="form-register">
+            <h2 class="form-register__title">Реєстрація</h2>
+            <div class="form-register__input">
+                <input type="text" placeholder="Логін">
+            </div>
+            <div class="form-register__input">
+                <input type="password" placeholder="Пароль">
+            </div>
+            <div class="form-register__input">
+                <input type="password" placeholder="Підтвердити пароль">
+            </div>
+            <div class="form-register__input">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="form-register__input">
+                <input type="submit" value="Зареєструватися">
+            </div>
+        </div>
 
         <!-- Swiper -->
 
@@ -67,6 +100,19 @@
             <div class="swiper-pagination"></div>
         </div>
     </header>
+
+    <div id="modal-container">
+        <div id="modal">
+            <button id="close-btn">&times;</button>
+            <h1>Ласкаво просимо на наш сайт!</h1>
+            <p>На цьому сайті ви зможете свою улюблену гру та придбати її.</p>
+        </div>
+    </div>
+
+    <ul class="header__register">
+        <li class="header__Signup">Sign up</li>
+        <li class="header__Login">Log in</li>
+    </ul>
 
     <!-- whyexstore  -->
 

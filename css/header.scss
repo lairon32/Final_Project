@@ -1,16 +1,19 @@
 .header {
     &__logo {
         height: 40px;
+        padding-left: 92px;
     }
-
-    height: 720px;
 
     &__navbar {
         display: flex;
         justify-content: space-between;
         color: rgba(239, 239, 239, 0.7);
         align-items: center;
-        padding-top: 22.5px;
+        padding-top: 25px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 10;
     }
 
     &__menu {
@@ -32,10 +35,10 @@
     &__register {
         display: flex;
         gap: 15px;
-        align-items: center;
         color: white;
         transition: .5s;
         font-size: 15px;
+        padding-right: 92px;
     }
 
     &__Signup {
@@ -71,6 +74,9 @@
         flex-direction: column;
         gap: 17px;
         color: white;
+        height: calc(720px - 100px);
+        padding-top: 197px;
+        padding-left: 92px;
     }
 
     &__title {

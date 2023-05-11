@@ -75,39 +75,69 @@ category.forEach((element) => {
 })
 
 
-// function renderBestGames(arr) {
-//     const container = document.createElement('div');
-//     container.className = 'item-best__games'
+document.addEventListener("DOMContentLoaded", function () {
+    const modalContainer = document.getElementById("modal-container");
+    const modal = document.getElementById("modal");
+    const closeBtn = document.getElementById("close-btn");
 
-//     const img = document.createElement('img')
-//     img.src = arr.image;
+    function openModal() {
+        modalContainer.style.visibility = "visible";
+        modalContainer.style.opacity = "1";
+    }
 
-//     const title = document.createElement('h2')
-//     title.className = 'item-best__games__title'
-//     title.textContent = arr.name;
+    function closeModal() {
+        modalContainer.style.visibility = "hidden";
+        modalContainer.style.opacity = "0";
+    }
 
-//     price.className = 'price'
-//     price.textContent = arr.price
+    openModal();
 
-//     const discount = document.createElement('p')
-//     discount.className = 'item-best__games__discount'
-//     discount.textContent = arr.discount
+    closeBtn.addEventListener("click", closeModal);
 
-//     const newPrice = document.createElement('s')
-//     newPrice.className = 'item-best__games__newprice'
-//     newPrice.textContent = arr.newPrice
+    modalContainer.addEventListener("click", function (modal) {
+        if (modal.target === modalContainer) {
+            closeModal();
+        }
+    });
+});
 
-//     const button = document.createElement('p')
-//     button.className = 'item-best__games__button'
-//     button.textContent = arr.button
+let loginButton = document.querySelector(".header__Login");
+let loginForm = document.querySelector(".form");
 
-//     container.append(img, title, price, discount, newPrice, button);
-//     return container;
 
-// }
+loginButton.addEventListener("click", function (event) {
 
-// bestGames.forEach((element) => {
-//     const search = document.querySelector('.best-games__column')
-//     search.append(renderCategory(element))
-// })
+    event.preventDefault();
 
+
+    if (loginForm.classList.contains("open")) {
+
+        loginForm.classList.remove("open");
+    } else {
+
+        loginForm.classList.add("open");
+    }
+});
+
+
+document.addEventListener("click", function (event) {
+
+    if (!loginForm.contains(event.target) && !loginButton.contains(event.target)) {
+
+        loginForm.classList.remove("open");
+    }
+});
+
+let registerButton = document.querySelector(".header__Signup");
+let formRegister = document.getElementById("form-register");
+
+registerButton.addEventListener("click", function (event) {
+    event.preventDefault();
+    formRegister.classList.toggle("open");
+});
+
+document.addEventListener("click", function (event) {
+    if (!formRegister.contains(event.target) && !registerButton.contains(event.target)) {
+        formRegister.classList.remove("open");
+    }
+});
