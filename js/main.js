@@ -101,8 +101,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-let loginButton = document.querySelector(".header__Login");
-let loginForm = document.querySelector(".form");
+const loginButton = document.querySelector(".header__Login");
+const loginForm = document.querySelector(".form");
 
 
 loginButton.addEventListener("click", function (event) {
@@ -122,14 +122,14 @@ loginButton.addEventListener("click", function (event) {
 
 document.addEventListener("click", function (event) {
 
-    if (!loginForm.contains(event.target) && !loginButton.contains(event.target)) {
+    if (loginForm.contains(event.target) && loginButton.contains(event.target)) {
 
         loginForm.classList.remove("open");
     }
 });
 
-let registerButton = document.querySelector(".header__Signup");
-let formRegister = document.getElementById("form-register");
+const registerButton = document.querySelector(".header__Signup");
+const formRegister = document.getElementById("form-register");
 
 registerButton.addEventListener("click", function (event) {
     event.preventDefault();
@@ -137,7 +137,7 @@ registerButton.addEventListener("click", function (event) {
 });
 
 document.addEventListener("click", function (event) {
-    if (!formRegister.contains(event.target) && !registerButton.contains(event.target)) {
+    if (formRegister.contains(event.target) && registerButton.contains(event.target)) {
         formRegister.classList.remove("open");
     }
 });
